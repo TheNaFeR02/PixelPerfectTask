@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+:root {
+    --primary-font: 'Montserrat';
+    --secondary-font: Arial, sans-serif;
+    --blue-press: #5087F8;
+    --blue: #2469F6;
+    --gray-main: #CDCDCD;
+    --gray-active: #EEEEEE;
+    --black: #1F2128;
+}
+
+/* Shows cursor is clickable if we click on the whole box not just the checkbox */
+label {
+    cursor: pointer;
+}
+
+div>p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--black);
+    line-height: 130%;
+    letter-spacing: 0;
+}
+
+/* This is where the component is mounted, similar to the preview of figma. */
+.container {
+    width: 578px;
+    height: 794px;
+    background-color: #FFFFFF;
+    position: relative;
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+}
+
+
+/* Frame */
+.frame {
+    /* margin: 0 auto; I didn't use it to center, I used top and left instead to try to be pixel perfect*/
+    box-sizing: border-box;
+    position: relative;
+    top: 85px;
+    left: 104px;
+    width: 372px;
+    height: 326px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid var(--gray-active);
+    box-shadow:
+        0px 8px 15px 0px #1414141F,
+        0px 0px 4px 0px #1414141A;
+}
+
+.pages {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    padding-left: 22px;
+}
+
+.pages-scroll {
+    height: 164px;
+    max-height: 164px;
+    overflow-y: auto;
+    /* Vertical scrolling */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+}
+
+/* Hide scrollbar for Chrome/Safari */
+.pages-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* --- Line Separator --- */
+.separator {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    width: 340px;
+    height: 0.7px;
+    background-color: var(--gray-main);
+    border: 0;
+    margin: 0;
+}
+
+/* --- Line Separator --- */
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
