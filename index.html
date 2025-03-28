@@ -23,13 +23,13 @@
     <div class="container">
         <div class="frame">
             <!-- Header: All pages -->
-            <label id="all-pages">
+            <label for="all-pages">
                 <div class="pages">
-                    <p>All pages</p><input id="all-pages" type="checkbox" />
+                    <p>All pages</p><input id="all-pages" type="checkbox" onclick="toggleAll(this)" />
                 </div>
             </label>
 
-            
+
             <!-- --------------------------------------------------------- -->
             <div class="separator">
                 <hr />
@@ -39,51 +39,53 @@
 
             <!-- Scrollable Pages -->
             <div class="pages-scroll">
-                <label id="page-1">
+                <label for="page-1">
                     <div class="pages">
                         <p>Page 1</p><input id="page-1" type="checkbox" />
                     </div>
                 </label>
-                <label id="page-2">
+                <label for="page-2">
                     <div class="pages">
                         <p>Page 2</p><input id="page-2" type="checkbox" />
                     </div>
                 </label>
-                <label id="page-3">
+                <label for="page-3">
                     <div class="pages">
                         <p>Page 3</p><input id="page-3" type="checkbox" />
                     </div>
                 </label>
-                <label id="page-4">
+                <label for="page-4">
                     <div class="pages">
                         <p>Page 4</p><input id="page-4" type="checkbox" />
                     </div>
                 </label>
-                <label id="page-5">
+                <label for="page-5">
                     <div class="pages">
                         <p>Page 5</p><input id="page-5" type="checkbox" />
                     </div>
                 </label>
-                <label id="page-6">
+                <label for="page-6">
                     <div class="pages">
                         <p>Page 6</p><input id="page-6" type="checkbox" />
                     </div>
                 </label>
             </div>
-            
-            
+
+
             <!-- --------------------------------------------------------- -->
             <div class="separator">
                 <hr />
             </div>
             <!-- --------------------------------------------------------- -->
 
-        
+
             <div class="footer">
                 <button>Done</button>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script> 
 </body>
 
 </html>
